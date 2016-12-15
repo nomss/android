@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html ng-app="MyApp">
+<head >
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+  <!--<meta name="format-detection" content="telephone=no">-->
+  <!--<meta name="msapplication-tap-highlight" content="no">-->
+  <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!--JavaScript polyfills-->
+  <script src="lib/polyfill.js"></script>
+
+  <!--<script src="lib/angular/angularV160.js"></script>-->
+  <!-- Angular -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>-->
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-resource.min.js"></script>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-route.min.js"></script>-->
+  <!--<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>-->
+
+  <!--<script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>-->
+
+
+  <!-- Cordova/Good Dynamics -->
+
+  <!--<script src="lib/ng-good.js"></script>-->
+  <script src="cordova.js"></script>
+
+  <!--<script src="GoodDynamics.js"></script>-->
+
+  <!-- Angular -->
+  <!--<script src="lib/angular/angular.js"></script>-->
+  <!--<script src="lib/ngCordova/ng-cordova.js"></script>-->
+  <!--<script src="lib/angular-animate/angular-animate.js"></script>-->
+  <!--<script src="lib/angular-sanitize/angular-sanitize.js"></script>-->
+  <!--<script src="lib/angular-ui-router/angular-ui-router.js"></script>-->
+
+  <!-- Angular 1.5.8-->
+  <script src="lib/angular-1.5.8/angular.js"></script>
+  <!--<script src="lib/ngCordova/ng-cordova.js"></script>-->
+  <script src="lib/angular-1.5.8/angular-animate.js"></script>
+  <script src="lib/angular-1.5.8/angular-sanitize.js"></script>
+  <script src="lib/angular-ui-router/angular-ui-router.js"></script>
+
+
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+
+  <!-- AngularFire -->
+  <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+
+
+  <!-- Ionic -->
+  <link href="lib/ionic/ionic.css" rel="stylesheet">
+  <link href="lib/ionicons/ionicons.css" rel="stylesheet">
+  <script src="lib/ionic/ionic.js"></script>
+  <script src="lib/ionic/ionic-angular.js"></script>
+
+  <!-- Additional libraries -->
+  <!--<link href="lib/animate.css/animate.css" rel="stylesheet">-->
+  <link href="lib/font-awesome/font-awesome.css" rel="stylesheet">
+  <link href="lib/material-design-icons/material-icons.css" rel="stylesheet">
+  <link href="lib/mdi/materialdesignicons.min.css" rel="stylesheet">
+  <script src="lib/moment/moment.js"></script>
+  <script src="lib/moment-timezone/moment-timezone-with-data.js"></script>
+  <!---->
+  <script src="lib/topojson/topojson.js"></script>
+  <script src="lib/datamaps/datamaps.all.js"></script>
+  <script src="lib/ng-debounce/angular-debounce.js"></script>
+  <!--<script src="lib/d3/d3.js"></script>-->
+
+
+
+
+  <!--<script type="text/javascript" src="cordova.js"></script>-->
+
+  <!--<script type="text/javascript" src="js/index.js"></script>-->
+
+  <!-- Auth0's JS library -->
+  <!--<script src="https://cdn.auth0.com/w2/auth0-7.4.min.js"></script>-->
+
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="js/feedback.js"></script>
+
+
+  <!--<script type="text/javascript" src="js/auth.service.js"></script>-->
+
+  <script type="text/javascript" src="js/factories.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="login/LoginController.js"></script>
+  <!--<script src="cordova_plugins.js"></script>-->
+
+  <!--<script type="text/javascript" src="https://cdn.auth0.com/js/lock/10.6/lock.min.js"></script>-->
+  <!--<script src="node_modules/angular-lock/dist/angular-lock.js"></script>-->
+  <!--<script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>-->
+
+  <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
+
+  <title>Hello World</title>
+</head>
+<body>
+
+<!--<ion-nav-bar class="bar-positive">-->
+<!--</ion-nav-bar>-->
+
+
+<!--<ion-nav-view>-->
+<!--<ion-view>-->
+<!--<ion-content>Hello!</ion-content>-->
+<!--</ion-view>-->
+<!--</ion-nav-view>-->
+
+
+<!--<ion-side-menus>-->
+
+<!--&lt;!&ndash; Center content &ndash;&gt;-->
+<!--<ion-side-menu-content>-->
+<!--<ion-header-bar class="bar-dark">-->
+<!--<h1 class="title">-->
+<!--</ion-header-bar>-->
+<!--<ion-content>-->
+<!--</ion-content>-->
+<!--</ion-side-menu-content>-->
+
+<!--&lt;!&ndash; Left menu &ndash;&gt;-->
+<!--<ion-side-menu side="left">-->
+<!--<ion-header-bar class="bar-dark">-->
+<!--<h1 class="title">Projects</h1>-->
+<!--</ion-header-bar>-->
+<!--</ion-side-menu>-->
+
+<!--</ion-side-menus>-->
+
+
+<!--<div ng-controller="LoginController">-->
+<!--<div> {{appFullName}} </div>-->
+<!--<h1>Apache Cordova</h1>-->
+<!--&lt;!&ndash;<div id="deviceready" class="blink">&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="event listening">Connecting to Device</p>&ndash;&gt;-->
+<!--&lt;!&ndash;<p class="event received">Device is Ready</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--<div>TestController: {{title}}</div>-->
+<!--<div class="button-bar">-->
+<!--&lt;!&ndash;<button type="button" ng-click="testFun()"></button>&ndash;&gt;-->
+<!--<button type="button" class="button button-block button-positive icon icon-right ion-log-in" ng-click="signIn()">Login</button>-->
+<!--<button type="button" class="button button-block button-positive icon icon-right ion-log-in" ng-click="disconnect()">Disconnect</button>-->
+
+<!--</div>-->
+<!--<div class="button-bar">-->
+<!--<button type="button" class="button button-block button-positive icon icon-right ion-log-in" ng-click="getGoogleApiClientStatus()">Get Status</button>-->
+<!--</div>-->
+<!--<div class="button-bar">-->
+<!--<button class="btn btn-primary" ng-click="vm.authService.login()">Log In</button>-->
+<!--<button ng-click="vm.authService.logout()">Log Out</button>-->
+<!--<a href="" ng-click="vm.googleLogin()">Log In with Google</a><br/>-->
+<!--</div>-->
+
+<!--</div>-->
+<ion-nav-view></ion-nav-view>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<ion-view class="login" view-title="{{title}}" hide-back-button="false">
+	<ion-content class="padding">
+		<div class="list list-inset">
+			<label class="item item-input">
+				<input type="text" placeholder="Username" ng-model="data.username">
+			</label>
+			<label class="item item-input">
+				<input type="password" placeholder="Password" ng-model="data.password">
+			</label>
+		</div>
+		<button class="button button-block button-calm" ng-click="login()">Login</button>
+
+
+		<!--<form novalidate autocomplete="off" name="form">-->
+			<!--<div class="cbp">U.S. Customs &amp; Border Protection</div>-->
+			<!--<div class="version" title="Build Date: {{(environment.version.date | date : 'medium') || 'Unknown'}}">Version {{environment.version.number || 'Unknown'}}</div>-->
+			<!--<div class="logo"></div>-->
+
+			<!--<error-card error="error"></error-card>-->
+
+			<!--&lt;!&ndash; Maintenance Reminder &ndash;&gt;-->
+			<!--<div class="list list-inset ng-hide" ng-show="!loading && !error && maintenanceInfo.visible">-->
+				<!--<div class="item item-double item-icon-right">-->
+					<!--<div class="item-text-wrap">-->
+						<!--<h2>Maintenance Reminder</h2>-->
+						<!--System may be unavailable during weekly maintenance window:-->
+						<!--<ul class="list-bullets">-->
+						  <!--<li><b class="w500">Local time:</b> {{maintenanceInfo.localText}}</li>-->
+						  <!--<li><b class="w500">US Eastern:</b> {{maintenanceInfo.easternText}}</li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<i class="icon material-icons">access_time</i>-->
+				<!--</div>-->
+			<!--</div>-->
+
+			<!--<div class="list list-inset {{formAnimation}}">-->
+				<!--&lt;!&ndash; Environment selection &ndash;&gt;-->
+				<!--<div class="item item-divider item-select">-->
+					<!--<h2>ATS Login</h2>-->
+  					<!--<select ng-model="environment.current" ng-options="e as e.name for e in environment.all"></select>-->
+				<!--</div>-->
+				<!---->
+				<!--&lt;!&ndash; Login in progress &ndash;&gt;-->
+				<!--<div class="item item-icon-right item-text-wrap ng-hide" ng-show="loading">-->
+					<!--<h2>{{loading}} In Progress</h2>-->
+					<!--<p>Please wait...</p>-->
+					<!--<i class="icon loading"></i>-->
+				<!--</div>-->
+
+				<!--&lt;!&ndash; Login form and buttons &ndash;&gt;-->
+				<!--<div ng-show="!loading">-->
+					<!--<label class="item item-input">-->
+						<!--<span class="input-label">Hash/Email</span>-->
+						<!--<input type="text" placeholder="Username" autofocus required name="username" ng-model="login.username" ng-disabled="loading">-->
+					<!--</label>-->
+					<!--<div class="item item-input-inset">-->
+						<!--<label class="item-input-wrapper">-->
+							<!--<span class="input-label">Password</span>-->
+							<!--<input class="password" type="{{passwordType || 'password'}}" placeholder="Password" required name="password" ng-model="login.password" ng-disabled="loading">-->
+						<!--</label>-->
+						<!--<button type="button" class="button button-small button-light" ng-click="passwordType = (passwordType == 'text' ? 'password' : 'text')">-->
+							<!--<i class="icon material-icons">{{passwordType == 'text' ? 'visibility_off' : 'visibility'}}</i>-->
+						<!--</button>-->
+					<!--</div>-->
+					<div class="button-bar">
+						<!--<a class="button button-block button-dark icon" ng-href="#/password/{{login.username}}" ng-disabled="!login.username || loading">Password Help</a>-->
+						<button type="button" class="button button-block button-positive icon icon-right ion-log-in" ng-disabled="" ng-click="firebaseGoogleLogin()">Firebase Google Login</button>
+						<button type="button" class="button button-block button-positive icon icon-right ion-log-in" ng-disabled="" ng-click="firebaseRedirectGoogleLogin()">Redirect GoogleLogin</button>
+					</div>
+					<div class="button-bar">
+						<button type="button" class="button button-block button-positive icon icon-right ion-log-in" ng-disabled="" ng-click="signOut()">LogOut</button>
+						<button type="button" class="button button-block button-positive icon icon-right ion-log-in" ng-disabled="" ng-click="plugInSignIn()">Plugin Signin</button>
+					</div>
+					<div class="button-bar">
+						<button type="button" class="button button-block button-positive icon icon-right ion-log-in" ng-disabled="" ng-click="createUserWithEmailAndPassword()">Sign Up</button>
+					</div>
+	</ion-content>
+</ion-view>
